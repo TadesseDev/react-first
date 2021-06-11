@@ -1,0 +1,66 @@
+@import url("https://www.youtube.com/redirect?event=comments&redir_token=QUFFLUhqbnROcDdCQVotZENVZ1U1WkJJcXpTWXcwT2NVZ3xBQ3Jtc0trNTlwZDVMZE55elhSTkMtNUJaRmFZWE9KaDlIWjBheUFkd19DYjBiVXBNWlN4NWJXZ0R1Mmd3aGJROEg1eDh1a0UwZ01QN3BFUGpvcXVET0M4aklkVGdIdWh4YTBFVEU5OUtqeXlVbUdYazdnWUtJWQ&q=https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DQuicksand%3Awght%40300%3B400%3B500%3B600%3B700%26display%3Dswap%27%29%3B&stzid=Ugzg0Dtym7n3H250A7F4AaABAg");
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Sitka Banner";
+}
+:root {
+  --orange: #ffa500;
+  --brown: #340100;
+}
+#root {
+  width: 75%;
+  margin: auto;
+}
+.navbar {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.navbar h2 {
+  font-size: 1.5em;
+  color: var(--orange);
+  margin-top: 5px;
+  font-family: "Pacifico";
+}
+.links a {
+  text-decoration: none;
+  color: #340100;
+  padding-left: 30px;
+  text-transform: capitalize;
+}
+.blogs {
+  margin-top: 20px;
+  text-align: left;
+}
+.blog {
+  margin-bottom: 30px;
+  border-bottom-right-radius: 10px;
+}
+.blog:hover {
+  box-shadow: 3px 3px 5px rgba(192, 192, 192, 0.418);
+}
+.blog .blogTitle {
+  font-size: 2em;
+  color: var(--brown);
+  font-family: "algerian";
+}
+.blog .blogBody {
+  padding-left: 20px;
+  font-size: 1.5em;
+}
