@@ -1,5 +1,12 @@
 import { useState, useEffect } from "react";
 import GetBlogs from "./BlogList";
+let getPostDAta = async (whatever) => {
+  // console.log("function is called");
+  const postURI = "http://localhost:4000/blogs";
+  const jsonPost = await fetch(postURI);
+  let postss = await jsonPost.json();
+  whatever(postss);
+};
 const Home = () => {
   // const clickHandlerWitParameter = (element) => {
   //   console.log(" this is function with parameter");
@@ -14,19 +21,15 @@ const Home = () => {
   //   setName("Addisu");
   //   setAge(27);
   // };
-
-  const [blogPost, whatever] = useState([
-    { title: "My new website", body: "lorem ipsum...", author: "mario", id: 1 },
-    { title: "Welcome party!", body: "lorem ipsum...", author: "yoshi", id: 2 },
-    { title: "Web d top tips", body: "lorem ipsum...", author: "mario", id: 3 },
-  ]);
+  const [blogPost, whatever] = useState([]);
+  window.addEventListener("DOMContentLoaded", () => getPostDAta(whatever));
   const [newBlog, updateNewState] = useState(blogPost);
   const deletSingleBlog = function (id) {
-    const newArray = blogPost.filter((blog) => blog.id != id);
+    const newArray = blogPost.filter((blog) => blog.id !== id);
     whatever(newArray);
   };
   const deletSingleBlog2 = function (id) {
-    const newArray = newBlog.filter((blog) => blog.id != id);
+    const newArray = newBlog.filter((blog) => blog.id !== id);
     updateNewState(newArray);
   };
   useEffect(() => {
