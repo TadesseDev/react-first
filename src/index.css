@@ -17,9 +17,13 @@ code {
   padding: 0px;
   font-family: "Sitka Banner";
 }
+body {
+  background-color: rgb(219, 214, 214);
+}
 :root {
   --orange: #ffa500;
   --brown: #340100;
+  --blurOrange: #ffa60042;
 }
 #root {
   width: 75%;
@@ -51,6 +55,7 @@ code {
 .blog {
   margin-bottom: 30px;
   border-bottom-right-radius: 10px;
+  position: relative;
 }
 .blog:hover {
   box-shadow: 3px 3px 5px rgba(192, 192, 192, 0.418);
@@ -63,4 +68,19 @@ code {
 .blog .blogBody {
   padding-left: 20px;
   font-size: 1.5em;
+}
+.removeBlog {
+  font-size: 1em;
+  padding: 3px 10px;
+  border: none;
+  background-color: var(--blurOrange);
+  color: var(--brown);
+  margin: auto;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+}
+.blog:hover .removeBlog {
+  background-color: var(--orange);
 }
