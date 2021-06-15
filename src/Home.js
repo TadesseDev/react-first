@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import FeatchUpdate from "./feachStateUpdate";
 import GetBlogs from "./BlogList";
 // let getPostDAta = async (whatever) => {
@@ -21,34 +20,34 @@ const Home = () => {
   // const [blogPost, whatever] = useState([]);
   // const [loading, setLoadingState] = useState(true);
   // const [errore, setErroreState] = useState({ text: "", isTrue: false });
-  const [loading, errore, blogPost] = FeatchUpdate({
+  const [loading, errore, blogPost, changeDataState] = FeatchUpdate({
     uri: "http://localhost:4000/blogs",
   });
   // window.addEventListener("DOMContentLoaded", () => getPostDAta(whatever));
   const deletSingleBlog = function (id) {
     const newArray = blogPost.filter((blog) => blog.id !== id);
-    // whatever(newArray);
+    changeDataState(newArray);
   };
-  useEffect(() => {
-    // const postURI = "http://localhost:4000/blogs";
-    // setTimeout(() => {
-    //   fetch(postURI)
-    //     .then((jsonPost) => {
-    //       if (!jsonPost.ok) {
-    //         throw jsonPost;
-    //       }
-    //       jsonPost.json().then((postss) => {
-    //         whatever(postss);
-    //         setLoadingState(false);
-    //       });
-    //     })
-    //     .catch((err) => {
-    //       console.log(err.statusText);
-    //       setLoadingState(false);
-    //       setErroreState({ text: err.statusText, isTrue: true });
-    //     });
-    // }, 1000);
-  }, []);
+  // useEffect(() => {
+  // const postURI = "http://localhost:4000/blogs";
+  // setTimeout(() => {
+  //   fetch(postURI)
+  //     .then((jsonPost) => {
+  //       if (!jsonPost.ok) {
+  //         throw jsonPost;
+  //       }
+  //       jsonPost.json().then((postss) => {
+  //         whatever(postss);
+  //         setLoadingState(false);
+  //       });
+  //     })
+  //     .catch((err) => {
+  //       console.log(err.statusText);
+  //       setLoadingState(false);
+  //       setErroreState({ text: err.statusText, isTrue: true });
+  //     });
+  // }, 1000);
+  // }, []);
   // console.log("the valuefor the blogPost is" + blogPost);
   if (errore.isTrue)
     return (

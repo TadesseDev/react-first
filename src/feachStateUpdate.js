@@ -6,25 +6,38 @@ const FeatchUpdate = (probs) => {
   const [errore, setErroreState] = useState({ text: "", isTrue: false });
   const [data, setData] = useState([]);
   useEffect(() => {
-    setTimeout(() => {
-      fetch(uri)
-        .then((jsonPost) => {
-          if (!jsonPost.ok) {
-            throw jsonPost;
-          }
-          jsonPost.json().then((postss) => {
-            setData(postss);
-            setLoadingState(false);
+    let fetchControler = new AbortController();
+    // let storePost = JSON.parse(sessionStorage.getItem("storedPost"));
+
+    if (localStorage.getItem("storedPost") == null) {
+      setTimeout(() => {
+        fetch(uri, { signal: fetchControler.signal })
+          .then((jsonPost) => {
+            if (!jsonPost.ok) {
+              throw jsonPost;
+            }
+            jsonPost.json().then((postss) => {
+              setData(postss);
+              setLoadingState(false);
+              localStorage.setItem("storedPost", JSON.stringify(postss));
+            });
+          })
+          .catch((err) => {
+            console.log(fetchControler.signal.aborted);
+            if (!fetchControler.signal.aborted) {
+              setLoadingState(false);
+              setErroreState({ text: err.statusText, isTrue: true });
+            }
           });
-        })
-        .catch((err) => {
-          console.log(err.statusText);
-          setLoadingState(false);
-          setErroreState({ text: err.statusText, isTrue: true });
-        });
-    }, 1000);
-  }, []);
-  return [loading, errore, data];
+      }, 1000);
+    } else {
+      console.log("using the stored sesion");
+      setData(JSON.parse(localStorage.getItem("storedPost")));
+      setLoadingState(false);
+    }
+    return () => fetchControler.abort();
+  }, [uri]);
+  return [loading, errore, data, setData];
 };
 
 export default FeatchUpdate;

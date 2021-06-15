@@ -2,37 +2,38 @@
   "blogs": [
     {
       "title": "My new website",
-      "body": "lorem ipsum...",
+      "body": "When you choose the font you want, you need to remember that not every computer has every font installed on it. In particular, most people don't have the fancy fonts installed on their machines. So if you choose one of these fonts for your blog it will not display how you want it to on a machine that doesn't have that font installed. In fact, it will display the default font instead, which will not give the look you were hoping for and may well drive people away from your blog. So when writing blog your blog posts and designing your blog themes, keep in mind the availability of fonts when choosing the best font to use for your blog.",
       "author": "mario",
       "id": 1
     },
     {
       "title": "Welcome party!",
-      "body": "lorem ipsum...",
+      "body": "When you choose the font you want, you need to remember that not every computer has every font installed on it. In particular, most people don't have the fancy fonts installed on their machines. So if you choose one of these fonts for your blog it will not display how you want it to on a machine that doesn't have that font installed. In fact, it will display the default font instead, which will not give the look you were hoping for and may well drive people away from your blog. So when writing blog your blog posts and designing your blog themes, keep in mind the availability of fonts when choosing the best font to use for your blog.",
       "author": "yoshi",
       "id": 2
     },
     {
       "title": "Web d top tips",
-      "body": "lorem ipsum...",
+      "body": "When you choose the font you want, you need to remember that not every computer has every font installed on it. In particular, most people don't have the fancy fonts installed on their machines. So if you choose one of these fonts for your blog it will not display how you want it to on a machine that doesn't have that font installed. In fact, it will display the default font instead, which will not give the look you were hoping for and may well drive people away from your blog. So when writing blog your blog posts and designing your blog themes, keep in mind the availability of fonts when choosing the best font to use for your blog.",
       "author": "mario",
       "id": 3
     },
     {
       "title": "My new website",
-      "body": "lorem ipsum...",
+      "body": "When you choose the font you want, you need to remember that not every computer has every font installed on it. In particular, most people don't have the fancy fonts installed on their machines. So if you choose one of these fonts for your blog it will not display how you want it to on a machine that doesn't have that font installed. In fact, it will display the default font instead, which will not give the look you were hoping for and may well drive people away from your blog. So when writing blog your blog posts and designing your blog themes, keep in mind the availability of fonts when choosing the best font to use for your blog.",
+
       "author": "mario",
       "id": 4
     },
     {
       "title": "Welcome party!",
-      "body": "lorem ipsum...",
+      "body": "When you choose the font you want, you need to remember that not every computer has every font installed on it. In particular, most people don't have the fancy fonts installed on their machines. So if you choose one of these fonts for your blog it will not display how you want it to on a machine that doesn't have that font installed. In fact, it will display the default font instead, which will not give the look you were hoping for and may well drive people away from your blog. So when writing blog your blog posts and designing your blog themes, keep in mind the availability of fonts when choosing the best font to use for your blog.",
       "author": "yoshi",
       "id": 5
     },
     {
       "title": "Web d top tips",
-      "body": "lorem ipsum...",
+      "body": "When you choose the font you want, you need to remember that not every computer has every font installed on it. In particular, most people don't have the fancy fonts installed on their machines. So if you choose one of these fonts for your blog it will not display how you want it to on a machine that doesn't have that font installed. In fact, it will display the default font instead, which will not give the look you were hoping for and may well drive people away from your blog. So when writing blog your blog posts and designing your blog themes, keep in mind the availability of fonts when choosing the best font to use for your blog.",
       "author": "mario",
       "id": 6
     }
