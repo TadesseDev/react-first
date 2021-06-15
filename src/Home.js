@@ -1,5 +1,6 @@
 import FeatchUpdate from "./feachStateUpdate";
 import GetBlogs from "./BlogList";
+import Container from './topFullSizeContainer'
 // let getPostDAta = async (whatever) => {
 //   // console.log("function is called");
 // };
@@ -49,20 +50,21 @@ const Home = () => {
   // }, 1000);
   // }, []);
   // console.log("the valuefor the blogPost is" + blogPost);
+  let content =<div></div>;
   if (errore.isTrue)
-    return (
+  content= (
       <div className="loading">
         <h4> Errore... {errore.text}</h4>
       </div>
     );
   else if (loading)
-    return (
+  content=  (
       <div className="loading">
         <h4> loading data...</h4>
       </div>
     );
   else
-    return (
+  content = (
       <div className="home">
         <GetBlogs
           blogs={blogPost}
@@ -76,6 +78,15 @@ const Home = () => {
         {/* <button onClick={stateChangingFunc}>set</button> */}
         {/* <button onClick={clickHandlerWithoutParameter}>click me</button>
       <button onClick={(e) => clickHandlerWitParameter(e)}>click me</button> */}
+      </div>
+    );
+    
+    return (
+      <div>
+        <Container />
+        <div className="homeContent">
+        {content}
+        </div>
       </div>
     );
 };

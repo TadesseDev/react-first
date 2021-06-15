@@ -26,7 +26,6 @@ body {
   --blurOrange: #ffa60042;
 }
 #root {
-  width: 75%;
   margin: auto;
 }
 .navbar {
@@ -35,6 +34,16 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  width: 75%;
+}
+.homeContent {
+  width: 75%;
+  margin: auto;
+}
+.headerContainer {
+  height: 300px;
+  background-color: #340100;
+  margin-top: 2vh;
 }
 .navbar h2 {
   font-size: 1.5em;
