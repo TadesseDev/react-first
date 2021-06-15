@@ -11,6 +11,7 @@ const FeatchUpdate = (probs) => {
 
     if (localStorage.getItem("storedPost") == null) {
       setTimeout(() => {
+        // console.log(`fetching data from ${uri}`);
         fetch(uri, { signal: fetchControler.signal })
           .then((jsonPost) => {
             if (!jsonPost.ok) {

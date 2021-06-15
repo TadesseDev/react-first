@@ -18,17 +18,16 @@ code {
   font-family: "Sitka Banner";
 }
 html::-webkit-scrollbar {
-  width: 3px;
-  background-color: #340100;
-}
-html::-webkit-scrollbar::hover {
   width: 10px;
   background-color: #340100;
 }
 html::-webkit-scrollbar-thumb {
   background-color: #ffa500;
-  border-radius: 50%;
+  border-radius: 10px;
 }
+/* html::-webkit-scrollbar-track-piece {
+  background-color: #09a35bfd;
+} */
 body {
   /* background-color: rgb(219, 214, 214); */
 }
@@ -58,7 +57,6 @@ body {
   margin-top: 2vh;
   background-image: url("winmac\ 3d.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 .navbar h2 {
@@ -85,12 +83,12 @@ body {
 .blog:hover {
   box-shadow: 3px 3px 5px rgba(192, 192, 192, 0.418);
 }
-.blog .blogTitle {
+.blogTitle {
   font-size: 2em;
   color: var(--brown);
   font-family: "algerian";
 }
-.blog .blogBody {
+.blogBody {
   padding-left: 20px;
   font-size: 1.5em;
   color: black;
@@ -116,4 +114,26 @@ body {
 .readMore {
   color: #340100;
   font-size: 0.7em;
+}
+.singlePost {
+  width: 75%;
+  margin: auto;
+}
+.singlePost .blogBody {
+  text-align: left;
+}
+.postBottom {
+  margin-left: 40px;
+}
+.postBottom .readMore {
+  border: var(--brown) 1px solid;
+  background-color: var(--orange);
+  border-radius: 5px;
+  padding: 3px 10px;
+  font-size: 1.5em;
+  float: left;
+  box-shadow: 0px 0px 20px 5px silver;
+}
+.singlePost > * {
+  padding-top: 30px;
 }
