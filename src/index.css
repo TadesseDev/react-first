@@ -17,8 +17,20 @@ code {
   padding: 0px;
   font-family: "Sitka Banner";
 }
+html::-webkit-scrollbar {
+  width: 3px;
+  background-color: #340100;
+}
+html::-webkit-scrollbar::hover {
+  width: 10px;
+  background-color: #340100;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #ffa500;
+  border-radius: 50%;
+}
 body {
-  background-color: rgb(219, 214, 214);
+  /* background-color: rgb(219, 214, 214); */
 }
 :root {
   --orange: #ffa500;
@@ -44,6 +56,10 @@ body {
   height: 300px;
   background-color: #340100;
   margin-top: 2vh;
+  background-image: url("winmac\ 3d.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .navbar h2 {
   font-size: 1.5em;
