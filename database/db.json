@@ -21,7 +21,6 @@
     {
       "title": "My new website",
       "body": "When you choose the font you want, you need to remember that not every computer has every font installed on it. In particular, most people don't have the fancy fonts installed on their machines. So if you choose one of these fonts for your blog it will not display how you want it to on a machine that doesn't have that font installed. In fact, it will display the default font instead, which will not give the look you were hoping for and may well drive people away from your blog. So when writing blog your blog posts and designing your blog themes, keep in mind the availability of fonts when choosing the best font to use for your blog.",
-
       "author": "mario",
       "id": 4
     },
@@ -36,7 +35,105 @@
       "body": "When you choose the font you want, you need to remember that not every computer has every font installed on it. In particular, most people don't have the fancy fonts installed on their machines. So if you choose one of these fonts for your blog it will not display how you want it to on a machine that doesn't have that font installed. In fact, it will display the default font instead, which will not give the look you were hoping for and may well drive people away from your blog. So when writing blog your blog posts and designing your blog themes, keep in mind the availability of fonts when choosing the best font to use for your blog.",
       "author": "mario",
       "id": 6
+    },
+    {
+      "title": "Ethioa",
+      "body": "this is all about ethiopia ",
+      "author": "Maru",
+      "id": 7
+    },
+    {
+      "title": "dsfsdf",
+      "body": "sdddfsdfadsfasdddfsdfadsfasdddfsdfadsfasdddfsdfadsfasdddfsdfadsfasdddfsdfadsfa",
+      "author": "Addisu",
+      "id": 8
+    },
+    {
+      "title": "america ",
+      "body": "this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making this is not a dream, this is a life in making ",
+      "author": "Addisu",
+      "id": 9
+    },
+    {
+      "title": "asd",
+      "body": "asd",
+      "author": "Bekalu",
+      "id": 10
+    },
+    {
+      "title": "asdas",
+      "body": "dasd",
+      "author": "Addisu",
+      "id": 11
+    },
+    {
+      "title": "asdas",
+      "body": "dasd",
+      "author": "Addisu",
+      "id": 12
+    },
+    {
+      "title": "asdas",
+      "body": "dasd",
+      "author": "Addisu",
+      "id": 13
+    },
+    {
+      "title": "asdas",
+      "body": "dasd",
+      "author": "Addisu",
+      "id": 14
+    },
+    {
+      "title": "asdas",
+      "body": "dasd",
+      "author": "Addisu",
+      "id": 15
+    },
+    {
+      "title": "sdaf",
+      "body": "sdaf",
+      "author": "Maru",
+      "id": 16
+    },
+    {
+      "title": "ghjg",
+      "body": "ghjghj",
+      "author": "Wosagne",
+      "id": 17
+    },
+    {
+      "title": "sadf",
+      "body": "sdfa",
+      "author": "Bekalu",
+      "id": 18
+    },
+    {
+      "title": "sadf",
+      "body": "sdaf",
+      "author": "Wosagne",
+      "id": 19
+    },
+    {
+      "title": "",
+      "body": "",
+      "author": "Addisu",
+      "id": 20
+    },
+    {
+      "title": "",
+      "body": "",
+      "author": "Addisu",
+      "id": 21
+    },
+    {
+      "title": "",
+      "body": "",
+      "author": "Addisu",
+      "id": 22
     }
   ],
-  "Admin": ["addisu Alemayehu"]
+  "Admin": [
+    "addisu Alemayehu"
+  ]
 }

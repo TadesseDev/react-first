@@ -1,10 +1,13 @@
 import FeatchUpdate from "./feachStateUpdate";
 import GetBlogs from "./BlogList";
-import Container from './topFullSizeContainer'
+import Container from "./topFullSizeContainer";
+import { useLocation } from "react-router-dom";
 // let getPostDAta = async (whatever) => {
 //   // console.log("function is called");
 // };
 const Home = () => {
+  const locstion = useLocation();
+  console.log(locstion.state.author);
   // const clickHandlerWitParameter = (element) => {
   //   console.log(" this is function with parameter");
   //   console.log(element.target);
@@ -50,21 +53,21 @@ const Home = () => {
   // }, 1000);
   // }, []);
   // console.log("the valuefor the blogPost is" + blogPost);
-  let content =<div></div>;
+  let content = <div></div>;
   if (errore.isTrue)
-  content= (
+    content = (
       <div className="loading">
         <h4> Errore... {errore.text}</h4>
       </div>
     );
   else if (loading)
-  content=  (
+    content = (
       <div className="loading">
         <h4> loading data...</h4>
       </div>
     );
   else
-  content = (
+    content = (
       <div className="home">
         <GetBlogs
           blogs={blogPost}
@@ -80,15 +83,13 @@ const Home = () => {
       <button onClick={(e) => clickHandlerWitParameter(e)}>click me</button> */}
       </div>
     );
-    
-    return (
-      <div>
-        <Container />
-        <div className="homeContent">
-        {content}
-        </div>
-      </div>
-    );
+
+  return (
+    <div>
+      <Container />
+      <div className="homeContent">{content}</div>
+    </div>
+  );
 };
 
 export default Home;

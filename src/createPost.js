@@ -1,15 +1,40 @@
 import { useState } from "react";
-
+import { History } from "history";
+import { useHistory } from "react-router-dom";
 const CreatePost = () => {
-  const [blogTitle, updateTitle] = useState("simple state");
-  const [blogBody, updateBody] = useState("simple state");
+  const [blogTitle, updateTitle] = useState("");
+  const [blogBody, updateBody] = useState("");
+  const [author, setAuthor] = useState("Addisu");
+  const [isLoading, setLoadin] = useState(false);
+  let histo = new useHistory();
   const onchangeHandle = (value, state) => {
+    state(value);
     // console.log(value);
-    console.log("form submited");
   };
-  const formControl = (e) => {
+  const formControl = (e, loading) => {
     e.preventDefault();
-    console.log("form submited");
+    loading(true);
+    setTimeout(() => {
+      fetch("http://localhost:4000/blogs", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title: blogTitle,
+          body: blogBody,
+          author: author,
+        }),
+      })
+        .then((e) => {
+          loading(false);
+          localStorage.clear();
+          histo.push("/", { author: author });
+        })
+        .catch((e) => {
+          loading(false);
+        });
+    }, 2000);
   };
   return (
     <div className="createPsot">
@@ -20,15 +45,36 @@ const CreatePost = () => {
           <input
             type="text"
             rows="10"
-            onChange={(e, updateTitle) => onchangeHandle}
+            value={blogTitle}
+            onChange={(e) => onchangeHandle(e.target.value, updateTitle)}
           />
           <label>Blog content</label>
-          <textarea rows="10" value={blogBody} />
-          <div>
-            <button className="readMore" onClick={(e) => formControl(e)}>
+          <textarea
+            rows="10"
+            value={blogBody}
+            onChange={(e) => onchangeHandle(e.target.value, updateBody)}
+          />
+          <label>autor</label>
+          <select onChange={(e) => onchangeHandle(e.target.value, setAuthor)}>
+            <option value="Addisu">Addisu</option>
+            <option value="Bekalu">Bekalu</option>
+            <option value="Maru">Maru</option>
+            <option value="Wosagne">Wosagne</option>
+            <option value="Other">Other</option>
+          </select>
+          {!isLoading && (
+            <button
+              className="readMore"
+              onClick={(e) => formControl(e, setLoadin)}
+            >
               Add Blog
             </button>
-          </div>
+          )}
+          {isLoading && (
+            <button className="readMore" disabled={true}>
+              submiting blog ...
+            </button>
+          )}
         </form>
       </div>
     </div>
