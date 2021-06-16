@@ -125,7 +125,8 @@ body {
 .postBottom {
   margin-left: 40px;
 }
-.postBottom .readMore {
+.postBottom .readMore,
+.createPsot .readMore {
   border: var(--brown) 1px solid;
   background-color: var(--orange);
   border-radius: 5px;
@@ -136,4 +137,32 @@ body {
 }
 .singlePost > * {
   padding-top: 30px;
+}
+.formContainer {
+  width: 60%;
+  margin: auto;
+  margin-top: 60px;
+  color: #340100;
+  text-transform: capitalize;
+}
+input,
+textarea {
+  display: block;
+  margin: auto;
+  width: 100%;
+  margin-top: 10px;
+  border: #ffa500 1px solid;
+  border-radius: 5px;
+  min-height: 30px;
+}
+label {
+  padding-top: 10px;
+  display: flex;
+  font-size: 1.5em;
+}
+.createPsot .readMore {
+  margin-top: 15px;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
+  box-shadow: 0px 0px 5px 3px silver;
 }
