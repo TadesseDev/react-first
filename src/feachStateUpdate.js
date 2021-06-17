@@ -32,13 +32,13 @@ const FeatchUpdate = (probs) => {
           });
       }, 1000);
     } else {
-      console.log("using the stored sesion");
+      // console.log("using the stored sesion");
       setData(JSON.parse(localStorage.getItem("storedPost")));
       setLoadingState(false);
     }
     return () => fetchControler.abort();
   }, [uri]);
-  return [loading, errore, data, setData];
+  return [loading, errore, data];
 };
 
 export default FeatchUpdate;

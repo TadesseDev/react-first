@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-const GetBlogs = ({ blogs, title, deletFunc }) => {
+const GetBlogs = ({ blogs, title }) => {
   const blogPost = blogs;
   const BlogsTitle = title;
-  const deletSingle = deletFunc;
   const callBack = function Ptint(element) {
     return (
       <div className="blog" key={element.id}>
@@ -13,9 +12,6 @@ const GetBlogs = ({ blogs, title, deletFunc }) => {
             <span className="readMore"> ...read more </span>
           </div>
         </Link>
-        <button className="removeBlog" onClick={() => deletSingle(element.id)}>
-          Delet this blog
-        </button>
       </div>
     );
   };

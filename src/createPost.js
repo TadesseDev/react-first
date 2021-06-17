@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { History } from "history";
 import { useHistory } from "react-router-dom";
 const CreatePost = () => {
   const [blogTitle, updateTitle] = useState("");

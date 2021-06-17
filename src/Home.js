@@ -1,13 +1,17 @@
 import FeatchUpdate from "./feachStateUpdate";
 import GetBlogs from "./BlogList";
 import Container from "./topFullSizeContainer";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 // let getPostDAta = async (whatever) => {
 //   // console.log("function is called");
 // };
 const Home = () => {
-  const locstion = useLocation();
-  console.log(locstion.state.author);
+  // const locstion = useLocation();
+  // try {
+  //   console.log(locstion.state.author);
+  // } catch (e) {
+  //   console.log("cant find the location");
+  // }
   // const clickHandlerWitParameter = (element) => {
   //   console.log(" this is function with parameter");
   //   console.log(element.target);
@@ -24,14 +28,10 @@ const Home = () => {
   // const [blogPost, whatever] = useState([]);
   // const [loading, setLoadingState] = useState(true);
   // const [errore, setErroreState] = useState({ text: "", isTrue: false });
-  const [loading, errore, blogPost, changeDataState] = FeatchUpdate({
+  const [loading, errore, blogPost] = FeatchUpdate({
     uri: "http://localhost:4000/blogs",
   });
   // window.addEventListener("DOMContentLoaded", () => getPostDAta(whatever));
-  const deletSingleBlog = function (id) {
-    const newArray = blogPost.filter((blog) => blog.id !== id);
-    changeDataState(newArray);
-  };
   // useEffect(() => {
   // const postURI = "http://localhost:4000/blogs";
   // setTimeout(() => {
@@ -69,11 +69,7 @@ const Home = () => {
   else
     content = (
       <div className="home">
-        <GetBlogs
-          blogs={blogPost}
-          title="All blogs"
-          deletFunc={deletSingleBlog}
-        />
+        <GetBlogs blogs={blogPost} title="All blogs" />
         {/* <p>
         {" "}
         {name} is {age} years old

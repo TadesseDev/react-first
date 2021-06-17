@@ -1,15 +1,31 @@
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import FeatchUpdate from "./feachStateUpdate";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const SinglePoseView = () => {
+  const hist = useHistory();
   const { id } = useParams();
-  const [loading, errore, posts, setData] = FeatchUpdate({
+  const [loading, errore, posts] = FeatchUpdate({
     uri: `http://localhost:4000/blogs`,
   });
+  const [deleting, setDeleting] = useState(false);
   const post = posts.filter((post) => post.id === Number(id))[0];
+  const deletPost = async () => {
+    // console.log(id);
+    setDeleting(true);
+    await fetch(`http://localhost:4000/blogs/${id}`, { method: "DELETE" });
+    setDeleting(false);
+    hist.push("/");
+  };
   // console.log(post);
   let content = null;
-  if (errore.isTrue) {
+  if (deleting) {
+    content = (
+      <div className="loading">
+        <h4> deleting...</h4>
+      </div>
+    );
+  } else if (errore.isTrue) {
     content = (
       <div className="loading">
         <h4> Errore... {errore.text}</h4>
@@ -30,6 +46,9 @@ const SinglePoseView = () => {
           <Link to="/">
             <span className="readMore"> Back to home </span>
           </Link>
+          <button href="" className="readMore delete" onClick={deletPost}>
+            Delete this blog
+          </button>
         </div>
       </div>
     );

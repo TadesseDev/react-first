@@ -171,3 +171,10 @@ label {
 .createPsot .readMore[disabled] {
   background-color: var(--blurOrange);
 }
+
+.readMore.delete {
+  background-color: orangered;
+}
+.postBottom > * {
+  margin-left: 20px;
+}
