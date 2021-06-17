@@ -11,7 +11,7 @@ const SinglePoseView = () => {
   const [deleting, setDeleting] = useState(false);
   const post = posts.filter((post) => post.id === Number(id))[0];
   const deletPost = async () => {
-    // console.log(id);
+    console.log(id);
     setDeleting(true);
     await fetch(`http://localhost:4000/blogs/${id}`, { method: "DELETE" });
     setDeleting(false);

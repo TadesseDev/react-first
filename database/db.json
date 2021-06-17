@@ -1,40 +1,16 @@
 {
   "blogs": [
     {
-      "title": "dsfsdf",
-      "body": "sdddfsdfadsfasdddfsdfadsfasdddfsdfadsfasdddfsdfadsfasdddfsdfadsfasdddfsdfadsfa",
+      "title": "about computer system ",
+      "body": "What is a Computer System? - Definition from Techopedia\nwww.techopedia.com › definition › 593\nA computer system is a basic, complete and functional hardware and software setup with everything needed to implement computing performance. That’s the basic working definition of the computer system as we know it, but it has gone through a lot of formal changes over the past few decades.\n\nDefinition of computer system | PCMag\nwww.pcmag.com › encyclopedia › term\nThe complete computer made up of the CPU, memory and related electronics (main cabinet), all the peripheral devices connected to it and its operating system. Computer systems fall into two...\n\nVideos for What Is Computer System\nWhat is a Computer System?4:44\nyoutube.com\n\nWhat is a Computer System?\n\nA Computer System5:32\nyoutube.com\n\nA Computer System\n\nWhat is a Computer Operating System? Learn 3 Types! | Operating System Definition2:25\nyoutube.com\n\nWhat is a Computer Operating System? Learn 3 Types! | Operating System Definition\n\nComputer Basics: Understanding Operating Systems1:31\nyoutube.com\n\nComputer Basics: Understanding Operating Systems\n\nMore videos for What Is Computer System »\ncomputer system explanation, What is computer system?\nkencorner.com › understanding-computer-system\nMar 02, 2018 · A computer system is a set of integrated devices which takes input, process it and give output. Also it store data and information.computer system allows users to input, manipulate and store data. Computer systems include a CPU, monitor, keyboard, mouse and other optional components.\n\nThe Computer System\npeda.net › id › 051dda04318\nA computer system is a set of integrated devices that input, output, process, and store data and information. Computer systems are currently built around at least one digital processing device. There are five main hardware components in a computer system: Input, Processing, Storage, Output and Communication devices.\n\nComputer-system Meaning | Best 2 Definitions of Computer-system\nwww.yourdictionary.com › computer-system\nComputer-system meaning (computing) A system for computing that includes the computing unit itself and its peripherals.",
       "author": "Addisu",
-      "id": 8
+      "id": 23
     },
     {
-      "title": "asdas",
-      "body": "dasd",
+      "title": "learning react",
+      "body": "Hire React Development Company - Trusted by P&G, Inch & 50 SMBs\nwww.creativeit.io › react › development\nT-shaped React Development Company | Working Since 2013 | Among Clients: P&G and Renault. Trending React Developers by GitHub | Top B2B Comp. by Clutch | Upwork Top Developers\n\nWorking Since 2013\nSince 2013 among their clients were\n\nP&G, Renault, and Harvard BS\n\nFull-stack services\nProviding full-stack JavaScript\n\nand UX/UI services\n\nTop B2B company\nTeam was recognized as the Top B2B\n\nin Eastern Europe by clutch.co\n\nFortune 500 companies\nWe create products for startups\n\nand Fortune 500 companies\n\nLearn React With Treehouse - Launch Your Tech Career Now\nteamtreehouse.com › React\nLearn How To Use The React Application With JavaScript To Build & Maintain User Interfaces. There Is No Better Time To Be A Beginner. Make 2021 Your Best Year Yet With Treehouse.\n\nExclusive Chat Community · Interactive Challenges · 7-Day Free Trial\n\nBrowse TracksOur Programs\nLearn React TrackReact Router 4 Basics Course\nReact Native Tutorial - Learn Programming\nwww.pluralsight.com › native-react\npluralsight.com has been visited by 10K+ users in the past month\n\nLearn how to use components, debug, consume an API and more with React Native. Start now!\n\nOffline Access · Live Mentoring · Learning Paths · Hands-on Learning\n\nUsing The Textinput Component 4MOptimize Performance For React\nReact Native Alternatives 4MReact Native Overview 4M\n",
       "author": "Addisu",
-      "id": 14
-    },
-    {
-      "title": "asdas",
-      "body": "dasd",
-      "author": "Addisu",
-      "id": 15
-    },
-    {
-      "title": "sadf",
-      "body": "sdfa",
-      "author": "Bekalu",
-      "id": 18
-    },
-    {
-      "title": "",
-      "body": "",
-      "author": "Addisu",
-      "id": 21
-    },
-    {
-      "title": "fgdhrdty",
-      "body": "ryr",
-      "author": "Addisu",
-      "id": 22
+      "id": 24
     }
   ],
   "Admin": [
