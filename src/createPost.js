@@ -1,11 +1,10 @@
 import { useState } from "react";
 
 const CreatePost = () => {
-  const [blogTitle, updateTitle] = useState("simple state");
-  const [blogBody, updateBody] = useState("simple state");
+  const [blogTitle, updateTitle] = useState("");
+  const [blogBody, updateBody] = useState("");
   const onchangeHandle = (value, state) => {
-    // console.log(value);
-    console.log("form submited");
+    state(value);
   };
   const formControl = (e) => {
     e.preventDefault();
@@ -20,14 +19,16 @@ const CreatePost = () => {
           <input
             type="text"
             rows="10"
-            onChange={(e, updateTitle) => onchangeHandle}
+            value={blogTitle}
+            onChange={(e)=>onchangeHandle(e.target.value,updateTitle)}//{console.log(e);updateTitle(blogTitle+e.nativeEvent.data)}}
           />
           <label>Blog content</label>
-          <textarea rows="10" value={blogBody} />
+          <textarea rows="10" value={blogBody} onChange={(e)=>onchangeHandle(e.target.value,updateBody)}/>
           <div>
             <button className="readMore" onClick={(e) => formControl(e)}>
               Add Blog
             </button>
+            {blogTitle}
           </div>
         </form>
       </div>
