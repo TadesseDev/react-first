@@ -14,7 +14,7 @@ const CreatePost = () => {
     e.preventDefault();
     loading(true);
     setTimeout(() => {
-      fetch("http://localhost:4000/blogs", {
+      fetch("https://jsonplaceholder.typicode.com//blogs", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

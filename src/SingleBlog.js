@@ -6,14 +6,16 @@ const SinglePoseView = () => {
   const hist = useHistory();
   const { id } = useParams();
   const [loading, errore, posts] = FeatchUpdate({
-    uri: `http://localhost:4000/blogs`,
+    uri: `https://jsonplaceholder.typicode.com/`,
   });
   const [deleting, setDeleting] = useState(false);
   const post = posts.filter((post) => post.id === Number(id))[0];
   const deletPost = async () => {
     console.log(id);
     setDeleting(true);
-    await fetch(`http://localhost:4000/blogs/${id}`, { method: "DELETE" });
+    await fetch(`https://jsonplaceholder.typicode.com//${id}`, {
+      method: "DELETE",
+    });
     setDeleting(false);
     hist.push("/");
   };

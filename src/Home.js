@@ -29,7 +29,7 @@ const Home = () => {
   // const [loading, setLoadingState] = useState(true);
   // const [errore, setErroreState] = useState({ text: "", isTrue: false });
   const [loading, errore, blogPost] = FeatchUpdate({
-    uri: "http://localhost:4000/blogs",
+    uri: "https://jsonplaceholder.typicode.com/posts",
   });
   // window.addEventListener("DOMContentLoaded", () => getPostDAta(whatever));
   // useEffect(() => {
