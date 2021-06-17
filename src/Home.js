@@ -29,7 +29,11 @@ const Home = () => {
   // const [loading, setLoadingState] = useState(true);
   // const [errore, setErroreState] = useState({ text: "", isTrue: false });
   const [loading, errore, blogPost] = FeatchUpdate({
+<<<<<<< HEAD
     uri: "https://jsonplaceholder.typicode.com/posts",
+=======
+    uri: "http://winmac.epizy.com/database/blog-data/blogs",
+>>>>>>> fe7472db189737eef29e67ad3ad9b4845271e0e6
   });
   // window.addEventListener("DOMContentLoaded", () => getPostDAta(whatever));
   // useEffect(() => {

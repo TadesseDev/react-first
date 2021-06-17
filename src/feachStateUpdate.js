@@ -8,7 +8,7 @@ const FeatchUpdate = (probs) => {
   useEffect(() => {
     let fetchControler = new AbortController();
     // let storePost = JSON.parse(sessionStorage.getItem("storedPost"));
-
+    console.log("trying " + uri);
     if (localStorage.getItem("storedPost") == null) {
       setTimeout(() => {
         // console.log(`fetching data from ${uri}`);
